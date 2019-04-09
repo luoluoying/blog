@@ -207,3 +207,27 @@ async doSomething() {
 //  mobx-4  使用mobx@4.x：configure({ enforceActions: boolean })
 //  mobx-5  使用configure({ enforceActions: value })
 ```
+5. flows
+```js
+// mobx-3 不支持flow 
+configure({ enforceActions: true });
+
+class Store {
+    @observable githubProjects = []
+    @observable state = 'pending' // 'pending'/ 'done'/ 'error'
+
+    fetchProjects = flow(function *() { // * 生成器函数
+        this.githubProjects = []
+        this.state = 'pending'
+        try {
+            const projects = yield fetchGithubProjectsSomehow() // yield 代替 await
+            const filteredProjects = somePrepeocessing(projects)
+            // 异步代码块会被自动包装成动作并修改状态
+            this.state = 'done'
+            this.githubProjects = filteredProjects
+        } catch (error) {
+            this.state = 'error'
+        }
+    })
+}
+```
