@@ -124,3 +124,86 @@ class Store {
         )
     }
 }
+```
+3. runInAction 工具函数
+```js
+// runInaction 还可以给定第一个参数作为名称， runInAction(f) 实际上是 action(f)() 的语法糖
+configure({ enforceActions: true });
+
+class Store {
+    @observable githubProjects = []
+    @observable state = 'pending' // 'pending'/ 'done'/ 'error'
+
+    @action
+    fetchProjects() {
+        this.githubProjects = []
+        this.state = 'pendding'
+
+        fetchGithubProjectsSomehow().then(
+            projects => {
+                const filteredProjects = somePreprocessing(projects)
+                // 将 最终的  修改放入一个异步动作中
+                runInAction(() => {
+                    this.githubProjects = filteredProjects
+                    this.state = 'done'
+                })
+            },
+            error => {
+                // 过程的另一个
+                runInAction(() => {
+                    this.state = 'error'
+                })
+            }
+        )
+    }
+}
+```
+
+4. async / await 
+   @action 仅用于代码块直到第一个await， 在每个await 之后，一个新的异步函数将启动，在每个await
+   之后，状态修改代码应该被包装成动作
+   ```但是从await拿到结果之后可以直接修改状态，未做动作包装```
+```js
+configure({ enforceActions: true });
+
+class Store {
+    @observable githubProjects = []
+    @observable state = 'pending' // 'pending'/ 'done'/ 'error'
+
+    // async / await
+    @action
+    async fetchProjects() {
+        this.githubProjects = []
+        this.state = 'pending'
+
+        try {
+            const projects = await fetchGithubProjectsSomehow()
+            const filteredProjects = somePreprocessing(projects)
+            // await 之后，再次修改状态需要动作
+
+            runInAction(() => {
+                this.githubProjects = filteredProjects
+                this.state = 'done'
+            })
+
+        } catch (error) {
+            runInAction(() => {
+                this.state = 'error'
+            })
+        }
+    }
+}
+// await之后修改状态是不是真的需要action包装
+@action
+async doSomething() {
+    console.log('doSomething');
+    const result =await get('/getArr')
+    console.log(result.data);
+    this.arr2=[this.arr2,...result.data]
+}
+// 测试之后发现，不用action 包装在await 之后也可以修改状态使用
+// 实际上是配置项的 是否强制所有的状态修改都在action中
+//  mobx-3  使用useStrict(true)
+//  mobx-4  使用mobx@4.x：configure({ enforceActions: boolean })
+//  mobx-5  使用configure({ enforceActions: value })
+```
