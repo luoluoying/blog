@@ -128,3 +128,5 @@ class App extends React.Component {
     }
  }
  ```
+#### 直接初始化state 需要的一些插件下面的链接
+ https://blog.csdn.net/weixin_43170484/article/details/84063994
