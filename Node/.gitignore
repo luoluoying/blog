@@ -1,0 +1,12 @@
+./vscode
+logs
+*.log
+npm-debug.log*
+sftp-config.json
+start.md
+//README.md
+node_modules/
+package-lock.json
+.tags
+.git
+host.txt
