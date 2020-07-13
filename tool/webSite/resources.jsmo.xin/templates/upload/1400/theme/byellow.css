@@ -1,0 +1,496 @@
+@charset "utf-8";
+#hcontact p {
+    color: #ffc33a
+}
+
+#header .wrapper {
+    background-color: #10100d
+}
+
+#header {
+    border-bottom-color: #10100d;
+    background-color: #10100d
+}
+
+#header .nav>li>a {
+    color: #898989
+}
+
+.module.mcustomize .header {
+    color: #ffffff
+}
+
+#indexPage .module .container_header .title {
+    color: #ffffff
+}
+
+.mlist.service .content_list li .item_info .title {
+    color: #ffffff
+}
+
+#header .nav>li>a span:after {
+    color: #ffc33a
+}
+
+#header .nav>li:hover a i,
+#header .nav>li a.active i {
+    color: #ffc33a
+}
+
+#header .nav .subnav {
+    border-color: #ffc33a;
+    background-color: #10100d
+}
+
+#indexPage .module .container_header .title:after {
+    border-color: #ffc33a
+}
+
+#indexPage .container_category a {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+#header .nav .subnav li a:hover,
+#header .nav .subnav li a.active {
+    color: #ffc33a;
+    background-color: #333333
+}
+
+.module.mcounter ul.content_list li p.number .counterDX {
+    color: #ffffff
+}
+
+.module.mcounter ul.content_list li div {
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    border-color: #ffc33a;
+    background-color: #ffc33a
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+a:hover,
+a.active {
+    color: #ffc33a
+}
+
+html:not(.browser-lt11) #indexPage .module .container_content .bx-wrapper .bx-controls-direction a i:before,
+html:not(.browser-lt11) #indexPage .module .container_content .bx-wrapper .bx-controls-direction a i:after {
+    background-color: #ffc33a
+}
+
+.mlist.service .content_list li .item_info:before {
+    background-color: #ffc33a
+}
+
+.mlist.service .content_list li .item_info .title {
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.mlist.project .content_list li .item_wrapper:before {
+    background-color: #ffc33a
+}
+
+.mlist.project .content_list li .item_wrapper {
+    background-color: #292929;
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.mlist.project .content_list li .item_info .title {
+    color: #fff
+}
+
+.module.mcustomize .description a.more:hover {
+    border-color: #ffc33a
+}
+
+.mlist.imagelink .content_list li.item_block .item_img:hover {
+    border-color: #ffc33a
+}
+
+.module.mcustomize .description a.more:hover {
+    background-color: #ffc33a
+}
+
+.module.mcustomize .description a.more:hover::before {
+    background-color: #ffc33a
+}
+
+.module.mcustomize .description a.more::before {
+    background-color: #FFBD30
+}
+
+#contactform p .inputtxt.submit:hover {
+    border-color: #ffc33a;
+    background-color: #ffc33a
+}
+
+#contactinfo div a:hover {
+    background-color: #ffc33a
+}
+
+.mlist.team .content_list li .item_wrapper {
+    background-color: #211e1b
+}
+
+.mlist.team .content_list li .item_info .title {
+    color: #FFFFFF
+}
+
+.mlist.news .content_list li .item_info .title {
+    color: #fff
+}
+
+.mlist.news .content_list li .item_info .subtitle {
+    border-color: rgba(255, 255, 255, .2)
+}
+
+.mlistpost.news #postInfo .subtitle {
+    border-color: rgba(255, 255, 255, 0.15)
+}
+
+#pages a.active {
+    color: #ffc33a
+}
+
+.bx-wrapper .bx-controls-direction a {
+    -webkit-filter: drop-shadow(0 2px 0px rgba(246, 246, 246, 0.2))
+}
+
+#contactform p .inputtxt {
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #898989;
+}
+
+#contactform p .inputtxt:hover {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+#contactform p .inputtxt.submit {
+    border-color: rgba(255, 255, 255, 0.1);
+    width: 28%
+}
+
+html,
+body {
+    background-color: #141414
+}
+
+#shares a {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #141414
+}
+
+#online_open {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: #141414
+}
+
+#pageTarget {
+    background: #141414
+}
+
+.container_target a {
+    color: #F5F5F5
+}
+
+.container_category {
+    border-bottom-color: rgba(255, 255, 255, 0.2)
+}
+
+.npagePage .mpageEditor .container_header .title {
+    color: #FFFFFF
+}
+
+.npagePage .content hr {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+html,
+body {
+    color: #848484
+}
+
+.npagePage .content {
+    color: #848484
+}
+
+.item_tags a {
+    background-color: #2D2D2D
+}
+
+.mlistpost.project #postWrapper #listContent>.item_tags {
+    border-color: transparent
+}
+
+.mlistpost.project #postWrapper #postInfo .wrapper .description {
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.mlistpost.service #postInfo {
+    border-color: rgba(255, 255, 255, 0.2)
+}
+
+.mlistpost.service #postNav li a {
+    border-color: rgba(120, 120, 120, 0.2)
+}
+
+.mlistpost.service #postNav li:hover a,
+.mlistpost.service #postNav li a.active {
+    background-color: #ffc33a
+}
+
+.mlistpost.service #postInfo .title {
+    color: #FFFFFF
+}
+
+.mlist.imagelink .content_list li.item_block .item_img {
+    border-color: rgba(255, 255, 255, 0.1)
+}
+
+.mlistpost.project #postWrapper #postInfo .wrapper .title {
+    color: #FFFFFF
+}
+
+.mlistpost.news #postInfo .title {
+    color: #FFFFFF
+}
+
+.mlistpost.news #postContent .postbody {
+    color: #848484
+}
+
+.module.mcustomize .description a.more {
+    background: none;
+    border-color: rgba(255, 255, 255, 0.3)
+}
+
+.mlist.team_tabs .tab_content .content_list li {
+    background-color: #10100d
+}
+
+.mlist.team_tabs .tab_content .content_list li .item_info .title {
+    color: #FFFFFF
+}
+
+.mlist.team_tabs .tab_button .content_list li .wrapper::after {
+    background-color: #ffc33a
+}
+
+.mlist.team_tabs .tab_button .content_list li {
+    background: #292929
+}
+
+.mlist.team_tabs .tab_button .content_list li .item_info .title {
+    color: #FFFFFF
+}
+
+#footer {
+    background-color: #10100d
+}
+
+#indexPage .module,
+#indexPage .mlist.service,
+#indexPage .mlist.project,
+#indexPage .mlist.team_tabs {
+    background-color: #141414
+}
+
+#moduleControl a.moduleCItem:hover,
+#moduleControl a.moduleCItem.active {
+    border-color: #ffc33a;
+}
+
+#indexPage #topSlider .bx-wrapper .bx-pager a div.mask {
+    background-color: #ffc33a
+}
+
+.mlist.team_tabs .tab_content .content_list li {
+    background-color: transparent
+}
+
+#indexPage .module .container_header .subtitle {
+    color: #5d5d5d
+}
+
+.mlist.team_tabs .tab_content .content_list li .item_info .subtitle {
+    color: #686868
+}
+
+.mlist.team_tabs .tab_button .content_list li .item_info .subtitle {
+    color: #878787
+}
+
+.mlist.project .content_list li .item_info .subtitle {
+    color: #878787
+}
+
+.mlist.service .content_list li .item_info .subtitle {
+    color: #878787
+}
+
+.mlist.service .content_list li:hover .item_mask {
+    background: rgba(0, 0, 0, .1)
+}
+
+.mlist.imagelink {
+    background: transparent
+}
+
+.bx-wrapper .bx-helper {
+    background: none
+}
+
+#indexPage #topSlider ul li p.subtitle {
+    color: #9f9f9f
+}
+
+.item_tags a:hover {
+    color: #ffc33a
+}
+
+#online_open:hover {
+    background-color: #333333;
+    border-color: rgba(255, 255, 255, .2)
+}
+
+#shares a:hover {
+    background-color: #333333;
+    border-color: rgba(255, 255, 255, .2)
+}
+
+#footer p {
+    color: #363636
+}
+
+#contactinfo p {
+    color: #505050
+}
+
+#contactinfo h3 {
+    color: #ffc33a;
+    margin-bottom: 40px
+}
+
+#contactform p {
+    margin-bottom: 10px
+}
+
+.npagePage .mpageEditor .postbody #contactform {
+    margin-top: 40px;
+    margin-bottom: 100px
+}
+
+#contactinfo div a i {
+    color: rgba(255, 255, 255, .8)
+}
+
+.mlist.news .content_list li .item_info .subtitle {
+    color: #7d7d7d
+}
+
+.item_tags i {
+    margin-top: 32px;
+    color: rgba(255, 255, 255, .5)
+}
+
+.item_tags a {
+    background-color: #0b0b0b
+}
+
+#pages a {
+    margin-bottom: 80px
+}
+
+.mlistpost.project #postWrapper #postInfo .wrapper .subtitle {
+    color: #636363
+}
+
+.module.mcounter ul.content_list li p {
+    color: #626262
+}
+
+#indexPage #topSlider .bx-wrapper .bx-pager a div.progress {
+    background-color: #3c3c3c
+}
+
+#pages a::after {
+    background-color: #ffc33a
+}
+
+html:not(.browser-lt11) .bx-wrapper .bx-controls-direction a i::before,
+html:not(.browser-lt11) .bx-wrapper .bx-controls-direction a i::after {
+    background: #ffc33a
+}
+
+.singlescreen #indexPage #topSlider .sliderArrow {
+    display: none
+}
+
+#contactinfo div a:hover i {
+    color: #10100b;
+}
+
+#contactinfo div a {
+    background: #2a2a2a
+}
+
+/*源文件结构改动*/
+
+/*.npagePage .mpageEditor #mcontact .module_container { max-width:1170px;}
+.npagePage .mpageEditor .postbody #contactinfo{margin-left:110px}
+.npagePage .mpageEditor .postbody #contactform{margin-top:0px;width:400px;margin-left:370px}
+#contactform p .inputtxt{border:none;border-bottom:1px solid rgba(255,255,255,.1);padding-left:10px}
+#contactform p .inputtxt:hover{border:none;border-bottom:1px solid rgba(255,255,255,0.3)}
+#contactform p .inputtxt.submit{width:130px;border:1px solid rgba(255,255,255,.1);margin-top:32px;padding:10px 0px}
+/*#contactform p:nth-child(4) { border:1px solid #f00;}*/
+
+/*联系结构变动*/
+
+/*#indexPage #contactlist #contactform{background:#ffffff;padding:40px 10%;margin-left:40%}
+#contactform p .inputtxt{border-bottom:1px solid rgba(0,0,0,.1)}
+#contactform p .inputtxt.submit{width:100%;border:1px solid rgba(0,0,0,.1);margin-top:0}
+#contactform p .inputtxt:hover{border-bottom:1px solid rgba(0,0,0,.3)}
+.npagePage .mpageEditor .postbody #contactform{width:460px;background:#ffffff;padding:40px 10%;margin-left:40%}
+.npagePage .mpageEditor .postbody #contactinfo{margin-left:0}
+.npagePage .mpageEditor .postbody #contactform{float:none}*/
+
+/*手机版*/
+
+.agent-mobile #navMini .nav a:hover,
+#navMini .nav a.active {
+    color: #ffc33a;
+    border-bottom: 1px solid #ffc33a
+}
+
+.agent-mobile #navMiniCell {
+    background-color: #10100B
+}
+
+.agent-mobile #navMini .nav li.navitem:before {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.agent-mobile #navMini .nav a:hover i,
+#navMini .nav a.active i {
+    color: #ffc33a
+}
+
+.agent-mobile .lcitem .rect {
+    background: #d2d2d2
+}
+
+.agent-mobile .module.mcounter ul.content_list li p.number .counterDX {
+    font-size: 42px
+}
+
+.agent-mobile #indexPage #contactlist #contactform {
+    width: 80%
+}

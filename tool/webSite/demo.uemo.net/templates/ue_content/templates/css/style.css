@@ -1,0 +1,494 @@
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+    background: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    border: none;
+    vertical-align: top
+}
+
+#control {
+    position: relative;
+    z-index: 100;
+    height: 50px;
+    background: #262626;
+    position: relative
+}
+
+#control .device-select {
+    float: left;
+    height: 50px
+}
+
+#control .device-select>a {
+    margin: 0 5px;
+    font-size: 26px;
+    line-height: 40px
+}
+
+#control .device-select>a.desktop {
+    font-size: 22px
+}
+
+#control .device-select>a.mobile {
+    font-size: 28px
+}
+
+#control .device-select>a i {
+    color: #646464
+}
+
+#control .device-select>a.active i {
+    color: #f8bc06
+}
+
+#control .theme-select {
+    float: left
+}
+
+#control .theme-select>span {
+    padding: 0 10px;
+    color: #909090;
+    font-size: 12px;
+    line-height: 50px;
+    vertical-align: middle
+}
+
+#control .theme-select>nav {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 50px;
+    vertical-align: middle
+}
+
+#control .theme-select>nav>span {
+    cursor: pointer;
+    margin: 0 3px;
+    position: relative
+}
+
+#control .theme-select>nav>span>i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 8px;
+    height: 8px;
+    transition: all 0.36s ease
+}
+
+#control .theme-select>nav>span.theme-b {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box
+}
+
+#control .theme-select>nav>span.bviolet,
+#control .theme-select>nav>span.bcyan,
+#control .theme-select>nav>span.bblue,
+#control .theme-select>nav>span.bgreen,
+#control .theme-select>nav>span.bred,
+#control .theme-select>nav>span.bwhite,
+#control .theme-select>nav>span.byellow {
+    border: 1px solid #404040;
+    background: #000
+}
+
+#control .theme-select>nav>span.wviolet,
+#control .theme-select>nav>span.wcyan,
+#control .theme-select>nav>span.wblue,
+#control .theme-select>nav>span.wgreen,
+#control .theme-select>nav>span.wred,
+#control .theme-select>nav>span.wblack,
+#control .theme-select>nav>span.wyellow {
+    border: 1px solid #404040;
+    background: #fff
+}
+
+#control .theme-select>nav>span.bblue i,
+#control .theme-select>nav>span.wblue i {
+    background-color: #3d46ff
+}
+
+#control .theme-select>nav>span.bgreen i,
+#control .theme-select>nav>span.wgreen i {
+    background-color: #3ed216
+}
+
+#control .theme-select>nav>span.bviolet i,
+#control .theme-select>nav>span.wviolet i {
+    background-color: #C603DD;
+}
+
+#control .theme-select>nav>span.bcyan i,
+#control .theme-select>nav>span.wcyan i {
+    background-color: #00CFC6;
+}
+
+#control .theme-select>nav>span.bred i,
+#control .theme-select>nav>span.wred i {
+    background-color: #e40807
+}
+
+#control .theme-select>nav>span.bwhite i {
+    background-color: #cacaca
+}
+
+#control .theme-select>nav>span.wblack i {
+    background-color: #cacaca
+}
+
+#control .theme-select>nav>span.byellow i,
+#control .theme-select>nav>span.wyellow i {
+    background-color: #eeb814
+}
+
+#control .theme-select>nav>span.active i {
+    width: 16px;
+    height: 16px
+}
+
+#control .qrcode::before {}
+
+#control .qrcode {
+    position: relative;
+    float: left;
+    width: 24px;
+    height: 50px;
+    margin-left: 10px;
+    /* background: url("../icon/qricon.png") no-repeat center center/18px 18px */
+    color: #707070;
+    line-height: 50px;
+}
+
+#control .qrcode .qrcondeArea {
+    position: absolute;
+    display: none;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border: 10px solid #fff;
+    border-radius: 5px
+}
+
+#control .qrcode .qrcondeArea canvas {
+    width: 100%;
+    height: 100%
+}
+
+#control .qrcode:hover .qrcondeArea {
+    display: block
+}
+
+#control .select-input {
+    float: left;
+    position: relative;
+    margin-top: 14px;
+    margin-left: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#control .select-input .text-input {
+    float: left;
+    background: #fff;
+    border: 1px solid #fff;
+    cursor: pointer
+}
+
+#control .select-input .text-input input {
+    width: 100px;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#control .select-input .text-input .fa {
+    width: 20px;
+    text-align: center;
+    transition: all 0.36s ease
+}
+
+#control .select-input .text-input .fa.open {
+    transform: rotate(90deg)
+}
+
+#control .select-input .select-option {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 5px 0;
+    max-height: 140px;
+    overflow: auto
+}
+
+#control .select-input .select-option a {
+    display: block;
+    padding: 5px 10px;
+    transition: all 0.36s ease
+}
+
+#control .select-input .select-option a:hover {
+    color: #666;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
+}
+
+#control .trybtn {
+    display: block;
+    margin-top: 9px;
+    margin-right: 34px;
+    float: right;
+    width: 90px;
+    height: 30px;
+    border-radius: 3px;
+    background: #ff592d;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer
+}
+
+#control .controlMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 50px;
+    color: #fff
+}
+
+#control .controlMask:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 83px;
+    height: 30px;
+    background: url(../icon/logocc.png) no-repeat center top/100% auto;
+    /* content: "\e620";
+
+    display: inline-block;
+
+    width: 100px;
+
+    font-family: "mofont" !important;
+
+    font-style: normal;
+
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 26px;
+
+    line-height: 48px; */
+}
+
+#index-logo {
+    float: left;
+    padding: 0 14px;
+    color: #909090;
+    font-family: HELVETICANEUELTPRO-THEX, Arial, "微软雅黑";
+    font-size: 14px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background: url("../icon/loading.gif") no-repeat center center;
+    background-color: #000;
+    z-index: 999;
+}
+
+#contentArea {
+    height: calc(100% - 50px);
+    transition: all 0.36s ease;
+    position: relative
+}
+
+#contentArea.mobile {
+    width: 375px;
+    height: calc(100% - 200px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+#contentArea.mobile .header {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    height: 40px;
+    background: #f4f5f7;
+    border-radius: 40px 40px 0 0
+}
+
+#contentArea.mobile .header i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    background: #ccc
+}
+
+#contentArea.mobile .footer {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 40px;
+    background: #f4f5f7;
+    border-radius: 0 0 40px 40px
+}
+
+#contentArea.mobile .footer i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ccc
+}
+
+#contentArea.tablet {
+    width: 980px;
+    height: calc(100% - 200px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+#contentArea.tablet .header {
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    left: -30px;
+    background: #f4f5f7;
+    border-radius: 30px 0 0 30px
+}
+
+#contentArea.tablet .header i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 50px;
+    width: 10px;
+    border-radius: 10px;
+    background: #ccc
+}
+
+#contentArea.tablet .footer {
+    position: absolute;
+    top: 0;
+    right: -44px;
+    width: 44px;
+    height: 100%;
+    background: #f4f5f7;
+    border-radius: 0 44px 44px 0
+}
+
+#contentArea.tablet .footer i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #ccc
+}
+
+#contentFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    /* background-color: #000; */
+}
+
+.controlMenu {
+    float: left;
+}
+
+#control .uemo-logo a i {
+    color: #939393;
+    font-size: 26px;
+    line-height: 48px;
+}
+
+#control .uemo-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100px;
+    text-align: center;
+    margin-left: -50px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.jsmo #control .controlMask:before,
+.jsmo .uemo-logo,
+.jsmo #control .trybtn {
+    display: none;
+}
