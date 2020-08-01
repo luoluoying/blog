@@ -3273,7 +3273,8 @@ html:not(.browser-lt11) #indexPage .module .container_content .bx-wrapper .bx-co
 
 #sitecontent .ff_pageList .videom .item_block {
     width: calc(100% / 3 - 15px);
-    height: auto;
+    /* height: auto; */
+    height: 369px;
     float: left;
     margin-right: 15px;
     margin-bottom: 20px;
