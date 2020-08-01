@@ -1763,7 +1763,8 @@ html:not(.browser-lt11) #indexPage .module .container_content .bx-wrapper .bx-co
     width: 30.83333%;
     margin-right: 2.5%;
     margin-bottom: 50px;
-    float: left
+    float: left;
+    height: 362px;
 }
 
 .mlist.service .content_list li.item_block img {
