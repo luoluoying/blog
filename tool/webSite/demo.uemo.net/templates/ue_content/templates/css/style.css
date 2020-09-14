@@ -26,6 +26,9 @@ img {
     background: #262626;
     position: relative
 }
+.desktop {
+    background-color: #262626;
+}
 
 #control .device-select {
     float: left;
